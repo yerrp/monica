@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>YERRP</title>
+<link rel="stylesheet" type="text/css" href="monica.css">
+<link rel="stylesheet" tyle="text/css" href="monicaprint.css">
+<script src="monica.min.js"></script>
+ <script type="text/javascript" src="monica.js"></script>
+  <script type="text/javascript" src="monicaUI.js"></script>
+ <script type="text/javascript" src="cvs1.js"></script>
+ <script type="text/javascript" src="cvs2.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="flash">
+
+<div id="introbevel">
+<div id="intro3">
+<div id="intro3text"><span class="stripe">AN APP FOR MANUAL</span></div>
+<div id="intro3textZ"><span class="stripe">RUN TIMING</span></div>
+<div id="intro3ctext">
+<span class="stripe2" id="learnhow">LEARN HOW</span>
+<span class="stripe2" id="learnhow2" style="display: none;">CLOSE</span>
+<span class="stripe2" id="getstarted">GET STARTED</span></div>
+</div>
+
+<div id="hideIntro" style="display: none;">
+<div id="intro4">
+
+<div id="intro4text">
+</div>
+
+<div id="intro4btext">
+<ul>
+<li>
+<span class="intructionsmargin">ADD A CSV FILE</span><br />
+<span class="intructionsmargin2">Use a Comma Separated File with Bib Number, First Name, Last Name, Age, & Sex. Create a CSV file using <a href="http://drive.google.com" target="_blank">Google Drive</a>  or <a href="test.csv" target="_blank">Use Sample</a> <br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">START THE TIMER</span><br />
+<span class="intructionsmargin2">The on screen clock will begin.<br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">RECORD A TIME</span><br />
+<span class="intructionsmargin2">Click the record button. Click the record time box. Press Enter when a runner crosses the finish line. <br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">RECORD A RUNNER</span><br />
+<span class="intructionsmargin2">Click the record button. Click the record runner box. Type in the bib number. Press Enter. Made an error? Double click a runner to undo a recording or click & drag to manually sort finished runners. <br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">PRINT THE RESULTS</span><br />
+<span class="intructionsmargin2">Click the finished button. Type in a race name & race date. Print!<br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">IT'S THAT EASY</span><br />
+<span class="intructionsmargin2">Remember. Timing is serious business. Practice & always have a plan b. <br /></span>
+</li>
+
+<li>
+<span class="intructionsmargin">STAY CONNECTED</span><br />
+<span class="intructionsmargin2"><a href="mailto:info@onleft.org?Subject=Hello">Email Us</a><br /></span>
+
+
+<span class="intructionsmargin2"><a href="http://twitter.com/onleft_" target="_blank">@onleft_</a><br /></span>
+
+</li>
+
+</ul>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!--   SECOND PAGE BEGINS HERE-->
+
+
+<div id="main" style="display: none;">
+<div id="logo">
+<div id="logoTitle">
+<div id="logo5" class="button2" style="display: none;"> &nbsp;</div>
+<div id="logo5" class="button2" style="display: none;"> READY</div>
+<input type="file" id="files" name="files[]" multiple="" style="display: none;">
+</div>
+</div>
+
+<div id="bevel2">
+<div id="othersb">
+<div id="timerstyle">
+<div id="stopwatch"></div>
+</div>
+ </div>
+  </div>
+  
+  <div id="others">
+  <div id="name"><input type="text" name="raceName" placeholder="RACE NAME" maxlength="27" class="name"></div>
+  <div id="name2"><input type="text" name="raceDate" placeholder="RACE DATE" maxlength="27" class="name2"></div>
+  </div>
+  
+  
+  <div id="others">
+<div id="others2"><div class="h1">EVERYBODY</div></div>
+<div id="others3"><div class="h2">FINISHERS</div></div>
+<div id="others4"><div class="h1"></div></div>
+<div id="others5" style="display: none;"><div class="h1"> &nbsp;</div></div>
+</div>
+<div id="others">
+<div id="drinks" class="huh"></div>
+<ol><div id="hugs" class="huh" ></div></ol>
+<ol><div id="kisses" class="huh"></div></ol>
+<div id="xoxo" class="huh" style="display:none;"></div>
+
+</div>
+<div id=pageBreak"></div>
+<div style="clear:both;"></div>
+<div id="shirtss" style="display: none;">
+<div id="shirtssshortssb">FEMALE</div>
+<ol><div id="f0" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss1"> 0 - 4</div>
+<ol><div id="f1" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss2"> 5 - 9</div>
+<ol><div id="f2" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss3"> 10 - 14</div>
+<ol><div id="f3" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss4"> 15 - 19</div>
+<ol><div id="f4" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss5"> 20 - 24</div>
+<ol><div id="f5" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss6"> 25 - 29</div>
+<ol><div id="f6" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss7"> 30 - 34</div>
+<ol><div id="f7" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss8"> 35 - 39</div>
+<ol><div id="f8" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss9"> 40 - 44</div>
+<ol><div id="f9" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss10"> 45 - 49</div>
+<ol><div id="f10" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss11"> 50 - 54</div>
+<ol><div id="f11" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss12"> 55 - 59</div>
+<ol><div id="f12" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss13"> 60 - 64</div>
+<ol><div id="f13" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss14"> 65 - 69</div>
+<ol><div id="f14" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss15"> 70 - 74</div>
+<ol><div id="f15" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss16"> 75 - 79</div>
+<ol><div id="f16" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss17"> 80 - 84</div>
+<ol><div id="f17" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss18"> 85 - 89</div>
+<ol><div id="f18" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss19"> 90 - 94</div>
+<ol><div id="f19" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss20"> 95 +</div>
+<ol><div id="f20" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortssb">FEMALE OVERALL</div>
+<ol><div id="f21" class="huh" style="display: none;"></div></ol>
+<ol><div id="f22" class="huh" style="display: none;"></div></ol>
+<ol><div id="f23" class="huh" style="display: none;"></div></ol>
+</div>
+
+<div id="shortss" style="display: none;">
+<div id="shirtssshortssb2"> MALE</div>
+<ol><div id="m0" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss21"> 0 - 4</div>
+<ol><div id="m1" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss22"> 5 - 9</div>
+<ol><div id="m2" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss23"> 10 - 14</div>
+<ol><div id="m3" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss24"> 15 - 19</div>
+<ol><div id="m4" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss25"> 20 - 24</div>
+<ol><div id="m5" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss26"> 25 - 29</div>
+<ol><div id="m6" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss27"> 30 - 34</div>
+<ol><div id="m7" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss28"> 35 - 39</div>
+<ol><div id="m8" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss29"> 40 - 44</div>
+<ol><div id="m9" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss30"> 45 - 49</div>
+<ol><div id="m10" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss31"> 50 - 54</div>
+<ol><div id="m11" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss32"> 55 - 59</div>
+<ol><div id="m12" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss33"> 60 - 64</div>
+<ol><div id="m13" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss34"> 65 - 69</div>
+<ol><div id="m14" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss35"> 70 - 74</div>
+<ol><div id="m15" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss36"> 75 - 79</div>
+<ol><div id="m16" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss37"> 80 - 84</div>
+<ol><div id="m17" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss38"> 85 - 89</div>
+<ol><div id="m18" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss39"> 90 - 94</div>
+<ol><div id="m19" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortss40"> 95 +</div>
+<ol><div id="m20" class="huh" style="display: none;"></div></ol>
+<div id="shirtssshortssb2"> MALE OVERALL</div>
+<ol><div id="m21" class="huh" style="display: none;"></div></ol>
+<ol><div id="m22" class="huh" style="display: none;"></div></ol>
+<ol><div id="m23" class="huh" style="display: none;"></div></ol>
+</div>
+
+
+</div>
+</div>
+
+<div id="main2" style="display: none;">
+<div id="enterinfo">
+<ul>
+    <li  style="display: none;"><a href="#tabs-1"">+<br />ADD CSV</a></li>
+    <li id="finishedbutton4" style="display: none;"><a href="#tabs-2">o<br />RECORD</a></li>
+    <li id="finishedbutton5" style="display: none;"><a href="#tabs-3"> + <br />QUICK ADD</a></li>
+    <li id="finishedbutton" style="display: none;"><a href="#tabs-4">&#x2713; <br />FINISHED</a></li>
+     <li id="finishedbutton6" style="display: none;"><a><b>&#9733; </b> <br />AWARDS</a></li>
+     <li id="finishedbutton3" style="display: none;"><a onclick="window.print();"><b>&#9732;</b> <br />PRINT</a></li>
+      <li id="finishedbutton2" style="display:none;"><a href="#tabs-4">x <br /> NOT FINISHED</a></li>
+    <li class="button"><a>+<br />ADD CSV</a></li>
+  </ul>
+  
+  <div id="tabs-1">
+  Create a CSV file using<br /><br /> <a href="http://drive.google.com" target="_blank">Google Drive</a>  <br /><br />or <br /><br /><a href="test.csv" target="_blank">Use Sample</a> <br />
+  </div>
+  
+  <div id="tabs-2">
+   <form>
+<span id="recordInput"><li><input type="text" name="record"><br /><br />record runner</li></span>
+<span id="timeInput"><li><input type="text" name="timeInput"><br /><br />record time</li></span>
+  </form>
+  </div>
+  
+  <div id="tabs-3">
+  <form>
+<li><input type="text" name="number"><br /><br /> bib number</li>
+<li><input type="text" name="firstName"><br /><br />first</li>
+<li><input type="text" name="lastName"><br /><br />last</li>
+<li><input type="text" name="age"><br /><br />age</li>
+<li><input type="text" name="sex"><br /><br />sex</li>
+<li style="display: none;"><input type="text" name="type"><br /><br />group</li>
+<li><input type="text" name="time"><br /><br />time</li><br />
+  </form>
+  </div>
+
+  <div id="tabs-4">
+  </div>
+
+</div>
+
+<div id="form">
+<form>
+<div id="record">
+<ul>
+<span id="recordInput"><li><input type="text" name="record" title="Not Found"><br /><br />record runner</li></span>
+<span id="timeInput"><li><input type="text" name="timeInput"><br /><br />record time</li></span>
+</ul>
+</div>
+</form></div>
+
+<div id="form2">
+<form>
+<div id="stuff">
+<ul>
+<li><input type="text" name="number"><br /><br /> bib number</li>
+<li><input type="text" name="firstName"><br /><br />first name</li>
+<li><input type="text" name="lastName"><br /><br />last name</li>
+<li><input type="text" name="age"><br /><br />age</li>
+<li><input type="text" name="sex"><br /><br />sex</li>
+<li><input type="text" name="type"><br /><br />type</li>
+<li><input type="text" name="time" style="display: none;"><br /><br /></li><br />
+</ul>
+</div>
+</form></div>
+
+</div>
+<!--   SECOND PAGE ENDS HERE-->
+
+</body>
+</html>

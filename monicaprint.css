@@ -1,0 +1,32 @@
+@media print{
+body{
+overflow-x: hidden;
+}
+
+#main2{
+display: none;
+}
+#main{
+width: 100%;
+}
+#hugs, #kisses, #others3, #others4{
+width: 46%;
+float: left;
+}
+
+#others3, #others4{
+width: 46%;
+float: left;
+}
+#others5, .xoxo{
+width: 0%;
+}
+
+#pageBreak{
+page-break-after: always;
+display: block;
+float: none;
+}
+
+
+}
